@@ -5,9 +5,9 @@ exports.seed = function(knex) {
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
-        {id: 1, name: 'Tony Stark'},
-        {id: 2, name: 'James Howlette'},
-        {id: 3, name: 'Remy LeBeau'}
+        {id: 1, name: 'Tony Stark', codeName: 'Iron Man'},
+        {id: 2, name: 'James Howlette', codeName: 'Wolverine'},
+        {id: 3, name: 'Remy LeBeau', codeName: 'Gambit'}
       ]);
     });
 };
